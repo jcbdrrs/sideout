@@ -29,10 +29,11 @@ export default function ApplicationViews() {
           <>
             <Outlet />
             <NavBar/>
-            <SplashPage/>
+           
           </>
         }
       >
+        <Route path="/" index element={<SplashPage currentUser={currentUser} />} />
         <Route path="games" index element={<GamesList currentUser={currentUser} />} />
         <Route path="login" index element={<Login currentUser={currentUser} />} />
         <Route path="profile" index element={<Profile currentUser={currentUser} />} />

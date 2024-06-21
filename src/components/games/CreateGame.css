@@ -47,11 +47,11 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    background-color: #007BFF;
+    background-color: #ffc200;
     color: #fff;
     cursor: pointer;
 }
 
 .eventbutton:hover {
-    background-color: #0056b3;
+    background-color: #ffc200;
 }

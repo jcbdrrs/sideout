@@ -65,8 +65,8 @@ export const Login = () => {
 
               <Label for="exampleEmail">snakeplissken@gmail.com</Label>
             </FormGroup>
-            <Button color="primary" type="submit">
-              SIGN IN
+            <Button color="primary" type="submit" >
+              LOGIN
             </Button>
           </Form>
           <hr></hr>

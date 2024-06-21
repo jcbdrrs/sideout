@@ -1,20 +1,33 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import "./splash.css";
+import { Button } from 'reactstrap';
+import { useNavigate } from 'react-router-dom';
 
 export const SplashPage = () => {
-    return (
-        <div className="wrapper-center">
-            <div className="splash">
-                <h1>
-                    <span>SIDEOUT!</span>
-                </h1>
-                <div className="splash-subtitle">
-                    "See you on the court"
-                </div>
-                <div className="mini">
-                </div>
-            </div>
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <div className="splash-container">
+        <div className="splash-image-container">
+          <img
+            src={"src/assets/sideout! logo.png"}
+            alt="Sideout Logo"
+            className="centered-image"
+          />
         </div>
-    );
+        <div className="button-container">
+        <Button
+          className="enter-button"
+          size="lg"
+          onClick={() => navigate("/login")}
+          
+        >
+          ENTER
+        </Button>
+      </div>
+      </div>
+    </>
+  );
 };
