@@ -15,17 +15,19 @@ export const SplashPage = () => {
             src={"src/assets/sideout! logo.png"}
             alt="Sideout Logo"
             className="centered-image"
+            onClick={() => navigate("/login")}
           />
+          <h2>SEE YOU ON THE COURT</h2>
         </div>
         <div className="button-container">
-        <Button
+        {/* <Button
           className="enter-button"
           size="lg"
           onClick={() => navigate("/login")}
           
         >
           ENTER
-        </Button>
+        </Button> */}
       </div>
       </div>
     </>

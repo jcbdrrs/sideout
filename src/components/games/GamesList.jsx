@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { getAllGames } from "../../services/GamesServices.jsx";
 import { useNavigate } from "react-router-dom";
 import { Card, CardImg, CardImgOverlay, CardHeader, CardBody, CardTitle, CardText, Button, CardFooter } from 'reactstrap';
+// import { CreateNewGame } from "../../services/GamesServices.jsx";
+
 
 export const GamesList = ({ currentUser }) => {
   const [gamesList, setGamesList] = useState([]);

@@ -26,7 +26,7 @@ export const Register = (props) => {
           })
         );
 
-        navigate("/");
+        navigate("/create-profile"); // change this navigate to /create-profile
       }
     });
   };

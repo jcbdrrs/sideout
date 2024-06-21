@@ -5,7 +5,7 @@
       "username": "Snake Plissken",
       "email": "snakeplissken@gmail.com",
       "bio": "I'm Snake Plissken, a former soldier turned mercenary. I've seen and done it all, from high-stakes missions to surviving the harshest conditions. I'm known for my combat skills and no-nonsense attitude. When I'm not on a mission, I like to stay off the grid and keep my skills sharp.",
-      "skillLevel": 3,
+      "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
       "img": "https://cdn.costumewall.com/wp-content/uploads/2019/07/snake-plissken.jpg"
     },
@@ -14,7 +14,7 @@
       "username": "Malloy",
       "email": "malloy@gmail.com",
       "bio": "I'm Malloy, a dedicated government official working to maintain order. My job often puts me in the middle of high-stakes situations, but I thrive under pressure. I pride myself on my strategic thinking and ability to make tough decisions. When I'm not at work, I enjoy staying informed about global affairs.",
-      "skillLevel": 3,
+      "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
       "img": "https://www.looper.com/img/gallery/why-robert-vesco-from-the-blacklist-looks-so-familiar/commander-malloy-represented-a-fascist-government-in-escape-from-la-1669853009.jpg"
     },
@@ -23,7 +23,7 @@
       "username": "Hershe LasPalmas",
       "email": "hershelaspalmas@gmail.com",
       "bio": "I'm Hershe Las Palmas, leader of a rebel group fighting for freedom in Los Angeles. I'm resourceful and resilient, always ready to face new challenges. My passion is helping others and fighting for justice. In my spare time, I enjoy planning our next move and staying connected with my community.",
-      "skillLevel": 2,
+      "skillLevel": "Intermediate",
       "cityState": "Los Angeles, CA",
       "img": "https://www.tafce.com/images/c/c4/Hershe_-_Edited.png"
     },
@@ -32,7 +32,7 @@
       "username": "Cuervo Jones",
       "email": "cuervojones@gmail.com",
       "bio": "I'm Cuervo Jones, the leader of a powerful gang in Los Angeles. I'm known for my charisma and ruthlessness. My vision for the city involves radical change, and I'm not afraid to use force to achieve my goals. I spend my time strategizing and expanding my influence.",
-      "skillLevel": 3,
+      "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
       "img": "https://static.wikia.nocookie.net/villains/images/7/72/498417.1.jpg/revision/latest?cb=20141001171946"
     },
@@ -41,7 +41,7 @@
       "username": "Brazen",
       "email": "brazen@gmail.com",
       "bio": "I'm Brazen, a skilled pilot and a key member of the resistance. I have a sharp mind and quick reflexes, making me an invaluable asset in high-pressure situations. I'm dedicated to our cause and always ready to support my team. When I'm not flying, I enjoy working on aircraft and improving my skills.",
-      "skillLevel": 2,
+      "skillLevel": "Beginner",
       "cityState": "Los Angeles, CA",
       "img": "https://www.tafce.com/images/thumb/2/2b/Brazen_-_Edited.png/425px-Brazen_-_Edited.png"
     },
@@ -50,7 +50,7 @@
       "username": "Taslima",
       "email": "taslima@gmail.com",
       "bio": "I'm Taslima, a survivor navigating the dangerous landscape of Los Angeles. I've learned to adapt quickly and use my keen observational skills to stay ahead. Despite the constant threats, I remain hopeful and resilient. I enjoy finding moments of peace amidst the chaos and staying connected with others who share my outlook.",
-      "skillLevel": 1,
+      "skillLevel": "Beginner",
       "cityState": "Los Angeles, CA",
       "img": "https://wearysloth.com/Gallery/2017/G/6700-21917.jpg"
     },
@@ -59,7 +59,7 @@
       "username": "Pipeline",
       "email": "pipeline@gmail.com",
       "bio": "I'm Pipeline, a daredevil and extreme sports enthusiast. I thrive on adrenaline and am known for my fearless stunts. Navigating the urban landscape is my specialty, and I love pushing the limits. When I'm not performing daring feats, you'll find me exploring other extreme sports and staying active.",
-      "skillLevel": 3,
+      "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
       "img": "https://vhistory.wordpress.com/wp-content/uploads/2020/10/peter-fonda.jpg"
     },
@@ -68,68 +68,106 @@
       "username": "Eddie",
       "email": "eddie@gmail.com",
       "bio": "I'm Eddie, a smooth-talker with a knack for getting what I want. I use my charm and quick wit to navigate tricky situations and come out on top. Survival in this chaotic city is my game, and I'm always looking for the next big score. In my spare time, I enjoy gambling and living life on the edge.",
-      "skillLevel": 2,
+      "skillLevel": "Intermediate",
       "cityState": "Los Angeles, CA",
       "img": "https://www.tafce.com/images/thumb/4/49/Map_to_the_Stars_Eddie_-_Edited.png/450px-Map_to_the_Stars_Eddie_-_Edited.png"
-    }
-  ],
-
-  "games": [
-    {
-      "Id": 1,
-      "date": "2024-06-15",
-      "time": "4:30 PM",      
-      "location": "Griffith Park, Los Angeles, CA",
-      "singlesOrDoublesGame": true
     },
     {
-      "Id": 2,
+      "username": "john west",
+      "email": "johnwest@gmail.com",
+      "avatar": "",
+      "created_at": "2024-06-21T15:57:58.680Z",
+      "bio": "",
+      "id": 9
+    },
+    {
+      "username": "jake",
+      "email": "jake@gmail.com",
+      "avatar": "",
+      "created_at": "2024-06-21T16:45:34.115Z",
+      "bio": "",
+      "id": 10
+    },
+    {
+      "username": "jake plizzken",
+      "email": "jakeplizzken@gmail.com",
+      "avatar": "",
+      "created_at": "2024-06-21T20:23:47.658Z",
+      "bio": "",
+      "id": 11
+    },
+    {
+      "username": "john",
+      "email": "west@gmail.com",
+      "avatar": "",
+      "created_at": "2024-06-21T20:31:54.388Z",
+      "bio": "",
+      "id": 12
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "date": "2024-06-15",
+      "time": "4:30 PM",
+      "location": "Griffith Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles"
+    },
+    {
+      "id": 2,
       "date": "2024-06-16 @ 3:00 PM",
       "time": "3:00 PM",
       "location": "Venice Beach, Los Angeles, CA",
-      "singlesOrDoublesGame": false
+      "singlesOrDoublesGame": "false"
     },
     {
-      "Id": 3,
+      "id": 3,
       "date": "2024-06-18",
-      "time": "5:30 PM",      
+      "time": "5:30 PM",
       "location": "Echo Park, Los Angeles, CA",
-      "singlesOrDoublesGame": true
+      "singlesOrDoublesGame": "Singles"
     },
     {
-      "Id": 4,
+      "id": 4,
       "date": "2024-06-19",
-      "time": "4:00 PM",      
+      "time": "4:00 PM",
       "location": "Westwood Recreation Center, Los Angeles, CA",
-      "singlesOrDoublesGame": false
+      "singlesOrDoublesGame": "false"
     },
     {
-      "Id": 5,
+      "id": 5,
       "date": "2024-06-20",
-      "time": "3:00 PM",      
+      "time": "3:00 PM",
       "location": "Pan Pacific Park, Los Angeles, CA",
-      "singlesOrDoublesGame": true
+      "singlesOrDoublesGame": "Singles"
     },
     {
-      "Id": 6,
+      "id": 6,
       "date": "2024-06-20",
-      "time": "6:00 PM",      
+      "time": "6:00 PM",
       "location": "Mar Vista Recreation Center, Los Angeles, CA",
-      "singlesOrDoublesGame": true
+      "singlesOrDoublesGame": "Singles"
     },
     {
-      "Id": 7,
+      "id": 7,
       "date": "2024-06-20",
-      "time": "6:00 PM",      
+      "time": "6:00 PM",
       "location": "Cheviot Hills Recreation Center, Los Angeles, CA",
-      "singlesOrDoublesGame": false
+      "singlesOrDoublesGame": "false"
     },
     {
-      "Id": 8,
+      "id": 8,
       "date": "2024-06-21",
-      "time": "1:30 PM",      
+      "time": "1:30 PM",
       "location": "Silver Lake Recreation Center, Los Angeles, CA",
-      "singlesOrDoublesGame": true
+      "singlesOrDoublesGame": "Singles"
+    },
+    {
+      "date": "2024-08-08",
+      "time": "15:33",
+      "location": "Ray's Campground",
+      "singlesOrDoublesGame": "Singles",
+      "id": 9
     }
   ]
 }

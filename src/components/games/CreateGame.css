@@ -7,6 +7,27 @@
     font-family: Arial, sans-serif;
 }
 
+.wrapper-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 60px; /* Adjust the value as needed */
+  }
+
+.create-game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Full height of the viewport */
+    padding-top: 60px; /* Adjust the value as needed */
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
 .bigdiv {
     display: flex;
     justify-content: center;
@@ -39,7 +60,7 @@
 .eventinput {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 3px;
 }
 
@@ -55,3 +76,4 @@
 .eventbutton:hover {
     background-color: #ffc200;
 }
+

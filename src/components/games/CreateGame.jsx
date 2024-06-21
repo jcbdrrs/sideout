@@ -1,103 +1,136 @@
+import "./CreateGame.css";
 import { useState } from "react";
-import { getAllGames } from "../../services/GamesServices.jsx";
-import { createGame } from "src/services/GamesServices.jsx";
 import { useNavigate } from "react-router-dom";
-import "src/components/games/CreateGame.css"
-
-
+import { FormGroup, Input, Label, Form, Button } from "reactstrap";
+import { createNewGame } from "../../services/GamesServices.jsx";
+import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem, Col } from 'reactstrap';
 
 
 export const CreateGame = ({ currentUser }) => {
+  const [game, setGame] = useState({
+    date: "",
+    time: "",
+    location: "",
+    singlesOrDoublesGame: "",
+  });
+  const navigate = useNavigate();
 
-    const [createGame, setCreateGame] = useState({
-        name: "",
-        eventDate: "",
-        location: ""
-    });
+  const handleCreateNewGame = (event) => {
+    event.preventDefault();
+    if (game.time && game.location) {
+      const newGame = {
+        date: game.date,
+        time: game.time,
+        location: game.location,
+        singlesOrDoublesGame: game.singlesOrDoublesGame,
+      };
 
-    const navigate = useNavigate();
-
-    const handleSave = (saveGame) => {
-        saveGame.gameDefault();
-
-        const gameToDatabase = {
-            name: createGame.name,
-            userId: currentUser.id,
-            gameDate: createGame.gameDate,
-            location: createGame.location
-        }
-
-        CreateGame(gameToDatabase).then(() => {
-            navigate("/games");
-
-        })
-
+      createNewGame(newGame).then(() => {
+        navigate("/games");
+      });
+    } else {
+      window.alert("Please fill out required fields!");
     }
+  };
 
-    return <>
-  <p>
-    Wrap a pair of{' '}
-    <code>
-      {`<Input>`}
-    </code>
-    {' '}and{' '}
-    <code>
-      {`<Label>`}
-    </code>
-    {' '}components in{' '}
-    <code>
-      {`<FormGroup floating>`}
-    </code>
-    {' '}to enable floating labels with Bootstrap’s textual form fields. A{' '}
-    <code>
-      placeholder
-    </code>
-    {' '}is required on each{' '}
-    <code>
-      {`<Input>`}
-    </code>
-    {' '}as our method of CSS-only floating labels uses the{' '}
-    <code>
-      :placeholder-shown
-    </code>
-    {' '}pseudo-element. Also note that the{' '}
-    <code>
-      {`<Input>`}
-    </code>
-    {' '}must come first so we can utilize a sibling selector (e.g.,{' '}
-    <code>
-      ~
-    </code>
-    ).
-  </p>
+  return <>
+  <section className="profile wrapper-center" key={game.id}>
   <Form>
-    <FormGroup floating>
-      <Input
-        id="exampleEmail"
-        name="email"
-        placeholder="Email"
-        type="email"
-      />
-      <Label for="exampleEmail">
-        Email
+    <FormGroup row>
+      <Label
+        for="exampleEmail"
+        size="lg"
+        sm={2}
+      >
+        LOCATION:
       </Label>
+      <div></div>
+      <Col sm={10}>
+        <Input
+          bsSize="rg"
+          id="exampleEmail"
+          name="location"
+          placeholder="Court Location"
+          type="text"
+          onChange={(event) => {
+            const gameCopy = { ...game };
+            gameCopy.location = event.target.value;
+            setGame(gameCopy);
+          }}
+        />
+      </Col>
     </FormGroup>
-    {' '}
-    <FormGroup floating>
-      <Input
-        id="examplePassword"
-        name="password"
-        placeholder="Password"
-        type="password"
-      />
-      <Label for="examplePassword">
-        Password
+    <FormGroup row>
+      <Label
+        for="exampleEmail2"
+        sm={2}
+      >
+        DATE:
       </Label>
+      <div></div>
+      <Col sm={10}>
+        <Input
+          id="date"
+          name="date"
+          placeholder="DATE"
+          type="date"
+          onChange={(event) => {
+            const gameCopy = { ...game };
+            gameCopy.date = event.target.value;
+            setGame(gameCopy);
+          }}
+        />
+      </Col>
     </FormGroup>
-    {' '}
-    <Button>
-      Submit
+    <FormGroup row>
+      <Label
+        for="exampleEmail2"
+        sm={2}
+      >
+        TIME:
+      </Label>
+      <div></div>
+      <Col sm={10}>
+        <Input
+          id="exampleEmail2"
+          name="time"
+          placeholder="3:33 PM"
+          type="time"
+          onChange={(event) => {
+            const gameCopy = { ...game };
+            gameCopy.time = event.target.value;
+            setGame(gameCopy);
+          }}
+        />
+      </Col>
+    </FormGroup>
+    <FormGroup row>
+      <Label
+        for="exampleEmail2"
+        sm={2}
+      >
+        TYPE:
+      </Label>
+      <div></div>
+      <Col sm={10}>
+        <Input
+          id="exampleEmail2"
+          name="type"
+          placeholder="Singles or Doubles?"
+          type="text"
+          onChange={(event) => {
+            const gameCopy = { ...game };
+            gameCopy.singlesOrDoublesGame = event.target.value;
+            setGame(gameCopy);
+          }}
+        />
+      </Col>
+    </FormGroup>
+    <Button onClick={handleCreateNewGame}>
+        CREATE GAME
     </Button>
   </Form>
-</>
-}
+  </section>
+  </>
+  
+};
