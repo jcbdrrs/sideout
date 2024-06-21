@@ -1,61 +1,42 @@
 import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { getUserById } from "../../services/UserServices.jsx";
-import { Card, CardImg, CardImgOverlay, CardHeader, CardLink, CardBody, CardTitle, CardText, Button, CardFooter, ListGroup, ListGroupItem } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem } from 'reactstrap';
 
 export const Profile = ({ currentUser }) => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    
-      getUserById(currentUser.id).then((userData) => {
-        const userObjData = userData[0]
-        setUser(userObjData);
-        console.log(userObjData)
-      });
-    
+    getUserById(currentUser.id).then((userData) => {
+      const userObjData = userData[0];
+      setUser(userObjData);
+      console.log(userObjData);
+    });
   }, [currentUser]);
 
   if (!user) {
     return <div>Loading...</div>;
   }
 
+  return (
+    <section className="profile wrapper-center" key={user.id}>
+      <Card style={{ width: '18rem' }}>
+        <img alt="Card" src={user.img} />
+        <CardBody>
+          <CardTitle tag="h5">{user.username}</CardTitle>
+          <CardText>
+            Bio:
+            <div>{user.bio}</div>
+          </CardText>
+        </CardBody>
+        <ListGroup flush>
+          <ListGroupItem>
+            Skill Level:
+            <div>{user.skillLevel}</div>
+          </ListGroupItem>
+        </ListGroup>
+      </Card>
+    </section>
+  );
+};
 
-
-  return <>
-
-  
-        <section key={user.id}>
-
-          <Card
-            style={{
-              width: '18rem'
-            }}
-          >
-            <img
-              alt="Card"
-              src="https://picsum.photos/300/200"
-
-            />
-            <CardBody>
-              <CardTitle tag="h5">
-                {user.id}
-              </CardTitle>
-              <CardText>
-                {user.bio}
-              </CardText>
-            </CardBody>
-            <ListGroup flush>
-              <ListGroupItem>
-                {user.skillLevel}
-              </ListGroupItem>
-            </ListGroup>
-
-          </Card>
-
-        </section>
-      
-     
-  
-  </>
-}

@@ -1,7 +1,8 @@
 import { useState } from "react";
-// import { createNewEvent } from "../../services/eventService.jsx";
+import { getAllGames } from "../../services/GamesServices.jsx";
+import { createGame } from "src/services/GamesServices.jsx";
 import { useNavigate } from "react-router-dom";
-// import "./NewEvent.css"
+import "src/components/games/CreateGame.css"
 
 
 
@@ -33,56 +34,70 @@ export const CreateGame = ({ currentUser }) => {
 
     }
 
-    return (
-        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-            <input class="form-control" type="text" placeholder="Default input">
-                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"></input>
-                )
-
-
-        <div className="create-game" >
-             < form className="gameform" >
-                 <h2>New Game</h2>
-                 <fieldset className="gamefieldset">
-                     <input className="gameinput" }
-                       type="text" }
-                         placeholder="Name" }
-                         onChange={(changeGame) => { }
-                             const gameCopy = { ...createGame };
-                             gameCopy.name = changeGame.target.value;
-                             setCreateGame(gameCopy);
-                         }}
-                     />
-                 </fieldset>
-                 <fieldset className="gamefieldset">
-                     <input className="gameinput"
-                         type="text"
-                         placeholder="Location"
-                         onChange={(changeGame) => {
-                             const gameCopy = { ...createGame };
-                             gameCopy.location = changeGame.target.value;
-                             setCreateGame(gameCopy);
-                         }}
-                     />
-                 </fieldset>
-                 <fieldset className="gamefieldset">
-                     <input className="gameinput"
-                         type="date"
-                         placeholder="Game Date"
-                         onChange={(changeGame) => {
-                             const gameCopy = { ...createGame };
-                             gameCopy.gameDate = changeGame.target.value;
-                             setCreateGame(gameCopy);
-                         }}
-                     />
-                 </fieldset>
-                 <fieldset className="gamefieldset">
-                     <div>
-                         <button className="gamebutton" onClick={handleSave}>Save Game</button>
-                     </div>
-                 </fieldset>
-             </form >
-         </div >
-
-     );
-  };
+    return <>
+  <p>
+    Wrap a pair of{' '}
+    <code>
+      {`<Input>`}
+    </code>
+    {' '}and{' '}
+    <code>
+      {`<Label>`}
+    </code>
+    {' '}components in{' '}
+    <code>
+      {`<FormGroup floating>`}
+    </code>
+    {' '}to enable floating labels with Bootstrap’s textual form fields. A{' '}
+    <code>
+      placeholder
+    </code>
+    {' '}is required on each{' '}
+    <code>
+      {`<Input>`}
+    </code>
+    {' '}as our method of CSS-only floating labels uses the{' '}
+    <code>
+      :placeholder-shown
+    </code>
+    {' '}pseudo-element. Also note that the{' '}
+    <code>
+      {`<Input>`}
+    </code>
+    {' '}must come first so we can utilize a sibling selector (e.g.,{' '}
+    <code>
+      ~
+    </code>
+    ).
+  </p>
+  <Form>
+    <FormGroup floating>
+      <Input
+        id="exampleEmail"
+        name="email"
+        placeholder="Email"
+        type="email"
+      />
+      <Label for="exampleEmail">
+        Email
+      </Label>
+    </FormGroup>
+    {' '}
+    <FormGroup floating>
+      <Input
+        id="examplePassword"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <Label for="examplePassword">
+        Password
+      </Label>
+    </FormGroup>
+    {' '}
+    <Button>
+      Submit
+    </Button>
+  </Form>
+</>
+}
