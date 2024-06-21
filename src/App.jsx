@@ -4,11 +4,21 @@ import ApplicationViews from "./views/ApplicationViews";
 import { Login } from "./components/auth/Login.jsx";
 import { Register } from "./components/auth/Register.jsx"; 
 import { Authorized } from "./views/Authorized.jsx";
+import { SplashPage } from "./components/Splash/Splash.jsx";
 
 //TODO - wrap ApplicationViews with Authorized
 function App() {
   return (
+    
     <Routes>
+            <Route
+        path="/"
+        element={
+          <div className="wrapper-center">
+            <SplashPage />
+          </div>
+        }
+      />
       <Route
         path="/login"
         element={
@@ -25,6 +35,7 @@ function App() {
           </div>
         }
       />
+      
 
       <Route
         path="*"

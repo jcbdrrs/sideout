@@ -33,7 +33,7 @@ export const Login = () => {
           })
         );
 
-        navigate("/");
+        navigate("/games");
       } else {
         window.alert("Invalid login");
       }

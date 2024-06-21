@@ -21,7 +21,7 @@
 .logo-img {
   height: 90px; /* Adjust the height as needed */
   width: auto;
-  position: fixed;
+  position: auto;
   top: 0;
 }
 

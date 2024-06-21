@@ -18,6 +18,10 @@ export const Profile = ({ currentUser }) => {
     return <div>Loading...</div>;
   }
 
+
+// STILL NEED TO ADD CITYSTATE TO PROFILE <---------------------
+
+
   return (
     <section className="profile wrapper-center" key={user.id}>
       <Card style={{ width: '18rem' }}>
@@ -26,8 +30,8 @@ export const Profile = ({ currentUser }) => {
           <CardTitle tag="h5">{user.username}</CardTitle>
           <CardText>
             Bio:
-            <div>{user.bio}</div>
-          </CardText>
+            <div>{user.bio}</div> 
+          </CardText>   
         </CardBody>
         <ListGroup flush>
           <ListGroupItem>

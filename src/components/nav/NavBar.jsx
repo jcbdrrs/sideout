@@ -18,16 +18,16 @@ function NavBar() {
       <Nav pills>
         <NavItem className="navbar-logo">
           <NavLink
-            href="http://localhost:5173/"
+            href="http://localhost:5173/games"
           >
             <img src='src/assets/sideout! logo.png' alt='Logo' className='logo-img'/>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            href="http://localhost:5173/games"
+            href="http://localhost:5173/create-game"
           >
-            Games
+            CREATE GAME
           </NavLink>
         </NavItem>
         <NavItem>
@@ -41,11 +41,11 @@ function NavBar() {
           <NavLink
             href="http://localhost:5173/profile"
           >
-            Profile
+            PROFILE
           </NavLink>
         </NavItem>
         <NavItem>
-          <button onClick={handleLogout} className="logout-button">Logout</button>
+          <button onClick={handleLogout} className="logout-button">LOGOUT</button>
         </NavItem>
       </Nav>
     </div>

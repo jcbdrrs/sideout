@@ -4,10 +4,9 @@ import NavBar from "../components/nav/NavBar.jsx";
 import { SplashPage } from "../components/Splash/Splash.jsx";
 import { GamesList } from "../components/games/GamesList.jsx";
 import { Login } from "../components/auth/Login.jsx";
-import { Navbar } from "reactstrap";
-
-// import { CreateGame } from "../components/games/CreateGame.jsx";
 import { Profile } from "../components/profile/Profile.jsx";
+import { CreateGame } from "../components/games/CreateGame.jsx";
+import { CreateProfile } from "../components/profile/CreateProfile.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
@@ -37,7 +36,8 @@ export default function ApplicationViews() {
         <Route path="games" index element={<GamesList currentUser={currentUser} />} />
         <Route path="login" index element={<Login currentUser={currentUser} />} />
         <Route path="profile" index element={<Profile currentUser={currentUser} />} />
-        {/* <Route path="create-game" index element={<CreateGame currentUser={currentUser} />} /> */}
+        <Route path="create-game" index element={<CreateGame currentUser={currentUser} />} />
+        <Route path="create-profile" index element={<CreateProfile currentUser={currentUser} />} />
       </Route>
     </Routes>
   );
