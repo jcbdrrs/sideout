@@ -29,14 +29,12 @@ export const Profile = ({ currentUser }) => {
         <CardBody>
           <CardTitle tag="h5">{user.username}</CardTitle>
           <CardText>
-            Bio:
-            <div>{user.bio}</div> 
+            Bio: {user.bio}
           </CardText>   
         </CardBody>
         <ListGroup flush>
           <ListGroupItem>
-            Skill Level:
-            <div>{user.skillLevel}</div>
+            Skill Level: {user.skillLevel}
           </ListGroupItem>
         </ListGroup>
       </Card>
