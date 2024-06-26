@@ -17,18 +17,10 @@ export const SplashPage = () => {
             className="centered-image"
             onClick={() => navigate("/login")}
           />
-          <h2>SEE YOU ON THE COURT</h2>
+          <div>
+          <h2 onClick={() => navigate("/login")}>SEE YOU ON THE COURT</h2>
+          </div>
         </div>
-        <div className="button-container">
-        {/* <Button
-          className="enter-button"
-          size="lg"
-          onClick={() => navigate("/login")}
-          
-        >
-          ENTER
-        </Button> */}
-      </div>
       </div>
     </>
   );

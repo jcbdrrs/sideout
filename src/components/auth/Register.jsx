@@ -7,9 +7,10 @@ export const Register = (props) => {
   const [user, setUser] = useState({
     username: "",
     email: "",
-    avatar: "",
-    created_at: "",
+    img: "",
+    skillLevel: "",
     bio: "",
+    cityState: ""
   });
   let navigate = useNavigate();
 
@@ -26,7 +27,7 @@ export const Register = (props) => {
           })
         );
 
-        navigate("/create-profile"); // change this navigate to /create-profile
+        navigate("/games"); // change this navigate to /create-profile
       }
     });
   };
@@ -111,7 +112,7 @@ export const Register = (props) => {
                 placeholder="Enter your name"
                 required
               />
-              <Label for="username">Snake Plissken</Label>
+              <Label for="username">USERNAME:</Label>
             </FormGroup>
             <FormGroup floating>
               <Input
@@ -121,9 +122,53 @@ export const Register = (props) => {
                 placeholder="Email address"
                 required
               />{" "}
-              <Label for="email">snakeplissken@gmail.com</Label>
+              <Label for="email">EMAIL:</Label>
             </FormGroup>
-            <Button color="primary" type="submit"> 
+            <FormGroup floating>
+              <div>
+                <Label for="img">PROFILE IMAGE: Enter URL (image address) Here</Label>
+              </div>
+              <Input
+                id="img"
+                name="img"
+                type="text"
+                onChange={updateUser}
+              />
+
+
+            </FormGroup>
+            <FormGroup floating>
+              <Input
+                onChange={updateUser}
+                type="text"
+                id="skillLevel"
+                placeholder="Beginner | Intermediate | Pro"
+                required
+              />{" "}
+              <Label for="skillLevel">SKILL LEVEL: "Beginner" | "Intermediate" | "Pro"</Label>
+            </FormGroup>
+            <FormGroup floating>
+              <Input
+                onChange={updateUser}
+                type="text"
+                id="bio"
+                placeholder="bio"
+                required
+              />{" "}
+              <Label for="bio">SHORT BIO:</Label>
+            </FormGroup>
+            <FormGroup floating>
+              <Input
+                onChange={updateUser}
+                type="text"
+                id="cityState"
+                placeholder="City, State"
+                required
+              />{" "}
+              <Label for="cityState">CITY, STATE: </Label>
+            </FormGroup>
+
+            <Button color="primary" type="submit">
               LET'S GO!
             </Button>
           </Form>

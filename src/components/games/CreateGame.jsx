@@ -23,6 +23,7 @@ export const CreateGame = ({ currentUser }) => {
         time: game.time,
         location: game.location,
         singlesOrDoublesGame: game.singlesOrDoublesGame,
+        userId: currentUser.id
       };
 
       createNewGame(newGame).then(() => {
@@ -34,103 +35,104 @@ export const CreateGame = ({ currentUser }) => {
   };
 
   return <>
-  <section className="profile wrapper-center" key={game.id}>
-  <Form>
-    <FormGroup row>
-      <Label
-        for="exampleEmail"
-        size="lg"
-        sm={2}
-      >
-        LOCATION:
-      </Label>
-      <div></div>
-      <Col sm={10}>
-        <Input
-          bsSize="rg"
-          id="exampleEmail"
-          name="location"
-          placeholder="Court Location"
-          type="text"
-          onChange={(event) => {
-            const gameCopy = { ...game };
-            gameCopy.location = event.target.value;
-            setGame(gameCopy);
-          }}
-        />
-      </Col>
-    </FormGroup>
-    <FormGroup row>
-      <Label
-        for="exampleEmail2"
-        sm={2}
-      >
-        DATE:
-      </Label>
-      <div></div>
-      <Col sm={10}>
-        <Input
-          id="date"
-          name="date"
-          placeholder="DATE"
-          type="date"
-          onChange={(event) => {
-            const gameCopy = { ...game };
-            gameCopy.date = event.target.value;
-            setGame(gameCopy);
-          }}
-        />
-      </Col>
-    </FormGroup>
-    <FormGroup row>
-      <Label
-        for="exampleEmail2"
-        sm={2}
-      >
-        TIME:
-      </Label>
-      <div></div>
-      <Col sm={10}>
-        <Input
-          id="exampleEmail2"
-          name="time"
-          placeholder="3:33 PM"
-          type="time"
-          onChange={(event) => {
-            const gameCopy = { ...game };
-            gameCopy.time = event.target.value;
-            setGame(gameCopy);
-          }}
-        />
-      </Col>
-    </FormGroup>
-    <FormGroup row>
-      <Label
-        for="exampleEmail2"
-        sm={2}
-      >
-        TYPE:
-      </Label>
-      <div></div>
-      <Col sm={10}>
-        <Input
-          id="exampleEmail2"
-          name="type"
-          placeholder="Singles or Doubles?"
-          type="text"
-          onChange={(event) => {
-            const gameCopy = { ...game };
-            gameCopy.singlesOrDoublesGame = event.target.value;
-            setGame(gameCopy);
-          }}
-        />
-      </Col>
-    </FormGroup>
-    <Button onClick={handleCreateNewGame}>
-        CREATE GAME
-    </Button>
-  </Form>
-  </section>
+
+    <section className="wrapper-center" key={game.id}>
+      <Form>
+        <FormGroup row>
+          <Label
+            for="exampleEmail"
+            size="sm"
+            sm={2}
+          >
+            LOCATION:
+          </Label>
+          <div></div>
+          <Col sm={10}>
+            <Input
+              bsSize="rg"
+              id="exampleEmail"
+              name="location"
+              placeholder="Court Location"
+              type="text"
+              onChange={(event) => {
+                const gameCopy = { ...game };
+                gameCopy.location = event.target.value;
+                setGame(gameCopy);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label
+            for="exampleEmail2"
+            sm={2}
+          >
+            DATE:
+          </Label>
+          <div></div>
+          <Col sm={10}>
+            <Input
+              id="date"
+              name="date"
+              placeholder="DATE"
+              type="text"
+              onChange={(event) => {
+                const gameCopy = { ...game };
+                gameCopy.date = event.target.value;
+                setGame(gameCopy);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label
+            for="exampleEmail2"
+            sm={2}
+          >
+            TIME:
+          </Label>
+          <div></div>
+          <Col sm={10}>
+            <Input
+              id="exampleEmail2"
+              name="time"
+              placeholder="3:33 PM"
+              type="text"
+              onChange={(event) => {
+                const gameCopy = { ...game };
+                gameCopy.time = event.target.value;
+                setGame(gameCopy);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label
+            for="exampleEmail2"
+            sm={2}
+          >
+            TYPE:
+          </Label>
+          <div></div>
+          <Col sm={10}>
+            <Input
+              id="exampleEmail2"
+              name="type"
+              placeholder="Singles or Doubles?"
+              type="text"
+              onChange={(event) => {
+                const gameCopy = { ...game };
+                gameCopy.singlesOrDoublesGame = event.target.value;
+                setGame(gameCopy);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <Button onClick={handleCreateNewGame}>
+          CREATE GAME
+        </Button>
+      </Form>
+    </section>
   </>
-  
+
 };

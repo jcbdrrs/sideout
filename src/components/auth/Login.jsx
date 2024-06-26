@@ -63,7 +63,7 @@ export const Login = () => {
                 required
               />
 
-              <Label for="exampleEmail">snakeplissken@gmail.com</Label>
+              <Label for="exampleEmail">Email:</Label>
             </FormGroup>
             <Button color="primary" type="submit" >
               LOGIN
