@@ -83,14 +83,6 @@
       "userId": 2
     },
     {
-      "id": 2,
-      "date": "6/6/24",
-      "time": "3:00 PM",
-      "location": "Venice Beach, Los Angeles, CA",
-      "singlesOrDoublesGame": "Doubles",
-      "userId": 3
-    },
-    {
       "location": "Westwood Recreation Center, Los Angeles, CA",
       "id": 4,
       "date": "6/7/24",
@@ -152,6 +144,21 @@
       "id": 1,
       "gameId": 1,
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "gameId": 1,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "gameId": 4,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "gameId": 1,
+      "id": 5
     }
   ]
 }

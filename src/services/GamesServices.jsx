@@ -1,6 +1,11 @@
 export const getAllGames = () => {
-    return fetch(`http://localhost:8088/games`).then((res) => res.json())
+    return fetch(`http://localhost:8088/games?_expand=user`).then((res) => res.json())
 }
+
+export const getAllBridgeGames = () => {
+  return fetch(`http://localhost:8088/gamebridge?_expand=user`).then((res) => res.json())
+}
+
 
 export const createNewGame = (newGame) => {
     return fetch(`http://localhost:8088/games`, {
@@ -27,6 +32,22 @@ export const deleteGame = (gameId) => {
   export const updateGame = (myGame) => {
     return fetch(`http://localhost:8088/games/${myGame.id}`, {
       method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(myGame)
+    })
+  }
+
+  export const getGameBridgeById = (Id) => {
+    return fetch(`http://localhost:8088/gameBridge/${Id}?_expand=user`).then((res) =>
+       res.json())
+  
+  };
+  
+  export const handleAcceptGame = (myGame) => {
+    return fetch(`http://localhost:8088/gameBridge/`, {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
