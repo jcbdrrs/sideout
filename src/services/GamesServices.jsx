@@ -40,7 +40,7 @@ export const deleteGame = (gameId) => {
   }
 
   export const getGameBridgeById = (Id) => {
-    return fetch(`http://localhost:8088/gameBridge/${Id}?_expand=user`).then((res) =>
+    return fetch(`http://localhost:8088/gameBridge?gameId=${Id}&_expand=user`).then((res) =>
        res.json())
   
   };
