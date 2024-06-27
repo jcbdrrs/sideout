@@ -65,7 +65,7 @@ export const GamesList = ({ currentUser }) => {
        handleDeleteCreatedNewGame={handleDeleteCreatedNewGame}
        currentUser={currentUser}/>
       ))}
-      <button onClick={()=>console.log(bridgeGamesList)}>bridge game test</button>
+      
     </>
   )
 }

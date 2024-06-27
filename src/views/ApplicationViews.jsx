@@ -7,6 +7,7 @@ import { Login } from "../components/auth/Login.jsx";
 import { Profile } from "../components/profile/Profile.jsx";
 import { CreateGame } from "../components/games/CreateGame.jsx";
 import { EditGame } from "../components/games/editGame.jsx";
+import { EditProfile } from "../components/profile/EditProfile.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
@@ -38,6 +39,7 @@ export default function ApplicationViews() {
         <Route path="profile" index element={<Profile currentUser={currentUser} />} />
         <Route path="create-game" index element={<CreateGame currentUser={currentUser} />} />
         <Route path="edit-game/:gameId" element={<EditGame currentUser={currentUser} />} />
+        <Route path="edit-profile/:profileId" element={<EditProfile currentUser={currentUser} />} />
       </Route>
     </Routes>
   );

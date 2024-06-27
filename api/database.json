@@ -71,6 +71,44 @@
       "skillLevel": "Intermediate",
       "cityState": "Los Angeles, CA",
       "img": "https://www.tafce.com/images/thumb/4/49/Map_to_the_Stars_Eddie_-_Edited.png/450px-Map_to_the_Stars_Eddie_-_Edited.png"
+    },
+    {
+      "username": "jake tester",
+      "email": "tester@gmail.com",
+      "img": "https://media.distractify.com/brand-img/co3hsKIJG/0x0/cowboy-bebop-anime-1637015097566.png",
+      "skillLevel": "Pro",
+      "bio": "i play ball.",
+      "cityState": "Outer, Space",
+      "created_at": "2024-06-26T21:09:20.502Z",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "username": "Spike Spiegel",
+      "email": "testing@gmail.com",
+      "img": "https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/aon9tdqs2etsfma0tv8g.jpg",
+      "skillLevel": "Pro",
+      "bio": "Name’s Spike Spiegel. I used to be a bounty hunter cruising the galaxy, but now I’ve traded my guns for handball. The court's my new frontier, and I bring the same quick reflexes and sharp eye to the game.",
+      "cityState": "Outer, Space"
+    },
+    {
+      "username": "Nic",
+      "email": "nic@gmail.com",
+      "img": "i'm nic",
+      "skillLevel": "pro",
+      "bio": "nic plays handball good",
+      "cityState": "hico wv",
+      "created_at": "2024-06-27T16:56:20.769Z",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "username": "sarah is an alien",
+      "email": "sarah@gmail.com",
+      "img": "https://img.asmedia.epimg.net/resizer/v2/JEY7K2DTGBCVPKWQ3H2GAZ2QKQ.jpg?auth=f2a6e43e898d44a272c2e05f4a7a34c87d74e1d29ab9593de6eff4fc1671f4e1&width=1472&height=828&smart=true",
+      "skillLevel": "Pro",
+      "bio": "I am the handball champion.",
+      "cityState": "Outer, Space"
     }
   ],
   "games": [
@@ -159,6 +197,36 @@
       "userId": 1,
       "gameId": 1,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "gameId": 8,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "gameId": 8,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "gameId": 8,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "gameId": 9,
+      "id": 9
+    },
+    {
+      "userId": 10,
+      "gameId": 10,
+      "id": 10
+    },
+    {
+      "userId": 10,
+      "gameId": 10,
+      "id": 11
     }
   ]
 }
