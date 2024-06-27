@@ -71,6 +71,15 @@
       "skillLevel": "Intermediate",
       "cityState": "Los Angeles, CA",
       "img": "https://www.tafce.com/images/thumb/4/49/Map_to_the_Stars_Eddie_-_Edited.png/450px-Map_to_the_Stars_Eddie_-_Edited.png"
+    },
+    {
+      "id": 12,
+      "username": "sarah is an alien",
+      "email": "sarah@gmail.com",
+      "img": "https://img.asmedia.epimg.net/resizer/v2/JEY7K2DTGBCVPKWQ3H2GAZ2QKQ.jpg?auth=f2a6e43e898d44a272c2e05f4a7a34c87d74e1d29ab9593de6eff4fc1671f4e1&width=1472&height=828&smart=true",
+      "skillLevel": "Pro",
+      "bio": "I am the handball champion.",
+      "cityState": "Outer, Space"
     }
   ],
   "games": [
@@ -121,44 +130,23 @@
       "location": "Silver Lake Recreation Center, Los Angeles, CA",
       "singlesOrDoublesGame": "Singles",
       "userId": 6
-    },
-    {
-      "location": "THIS IS A TEST GAME",
-      "id": 9,
-      "date": "8/8/24",
-      "time": "3:33 PM",
-      "singlesOrDoublesGame": "SINGLES",
-      "userId": 2
-    },
-    {
-      "location": "TEST OF A TEST TEST",
-      "id": 10,
-      "date": "7/7/24",
-      "time": "6:00 PM",
-      "singlesOrDoublesGame": "singles",
-      "userId": 1
     }
   ],
   "gameBridge": [
     {
-      "id": 1,
+      "userId": 12,
       "gameId": 1,
-      "userId": 1
+      "id": 1
     },
     {
-      "userId": 1,
-      "gameId": 1,
-      "id": 3
-    },
-    {
-      "userId": 1,
+      "userId": 12,
       "gameId": 4,
-      "id": 4
+      "id": 2
     },
     {
-      "userId": 1,
-      "gameId": 1,
-      "id": 5
+      "userId": 12,
+      "gameId": 5,
+      "id": 3
     }
   ]
 }

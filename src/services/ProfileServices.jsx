@@ -1,6 +1,6 @@
 
 export const createNewProfile = (newProfile) => {
-  return fetch(`http://localhost:8088/profile`, {
+  return fetch(`http://localhost:8088/users`, {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -9,6 +9,15 @@ export const createNewProfile = (newProfile) => {
   });
 }
 
+export const updateProfile = (myProfile) => {
+  return fetch(`http://localhost:8088/users/${myProfile.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(myProfile)
+  })
+}
 
 
 
