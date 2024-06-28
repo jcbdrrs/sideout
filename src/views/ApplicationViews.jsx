@@ -37,7 +37,7 @@ export default function ApplicationViews() {
         <Route path="/" index element={<SplashPage currentUser={currentUser} />} />
         <Route path="games" index element={<GamesList currentUser={currentUser} />} />
         <Route path="login" index element={<Login currentUser={currentUser} />} />
-        <Route path="profile" index element={<Profile currentUser={currentUser} />} />
+        <Route path="profile/:profileId" index element={<Profile currentUser={currentUser} />} />
         <Route path="create-game" index element={<CreateGame currentUser={currentUser} />} />
         <Route path="edit-game/:gameId" element={<EditGame currentUser={currentUser} />} />
         <Route path="edit-profile/:profileId" element={<EditProfile currentUser={currentUser} />} />

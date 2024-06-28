@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 import { getGameBridgeById, handleAcceptGame } from '../../services/GamesServices.jsx';
+import { Link } from 'react-router-dom';
 
 export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
 
@@ -12,6 +13,8 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
   });
   const [gameBridge2, setGameBridge2] = useState({});
 
+
+  
   const getAndSetGameBridge = () => {
     getGameBridgeById(game.id).then((gamesArray) => {
       setGameBridge(gamesArray);
@@ -62,8 +65,7 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
               SINGLES|DOUBLES: {game.singlesOrDoublesGame ? "Singles" : "Doubles"}
             </CardText>
             <CardText>
-              PLAYERS: {game?.user?.username} (vs) {gameBridge[0]?.user?.username}
-            </CardText>
+            PLAYERS: <Link to={`/profile/${game?.user?.id}`}>{game?.user?.username}</Link> (vs) <Link to={`/profile/${gameBridge[0]?.user?.id}`}>{gameBridge[0]?.user?.username}</Link>            </CardText>
 
             {game.userId == currentUser.id ? (
               <Button onClick={() => navigate(`/edit-game/${game.id}`)}>

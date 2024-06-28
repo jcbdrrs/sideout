@@ -2,20 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { getUserById } from "../../services/UserServices.jsx";
 import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export const Profile = ({ currentUser }) => {
   const [user, setUser] = useState({});
-
+const {profileId} = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
-    getUserById(currentUser.id).then((userData) => {
+    getUserById(profileId).then((userData) => {
       const userObjData = userData[0];
       setUser(userObjData);
       console.log(userObjData);
     });
-  }, [currentUser]);
+  }, []);
 
   if (!user) {
     return <div>Loading...</div>;

@@ -34,7 +34,7 @@
       "bio": "I'm Cuervo Jones, the leader of a powerful gang in Los Angeles. I'm known for my charisma and ruthlessness. My vision for the city involves radical change, and I'm not afraid to use force to achieve my goals. I spend my time strategizing and expanding my influence.",
       "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
-      "img": "https://static.wikia.nocookie.net/villains/images/7/72/498417.1.jpg/revision/latest?cb=20141001171946"
+      "img": "https://www.tafce.com/images/thumb/7/76/Cuervo_Jones_-_Edited.png/375px-Cuervo_Jones_-_Edited.png"
     },
     {
       "id": 5,
@@ -130,6 +130,14 @@
       "location": "Silver Lake Recreation Center, Los Angeles, CA",
       "singlesOrDoublesGame": "Singles",
       "userId": 6
+    },
+    {
+      "date": "6/8/24",
+      "time": "3:33",
+      "location": "Palet Town",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 12,
+      "id": 9
     }
   ],
   "gameBridge": [
@@ -137,53 +145,6 @@
       "userId": 12,
       "gameId": 1,
       "id": 1
-    }
-  ],
-  "messages": [
-    {
-      "id": 1,
-      "userId": 10,
-      "message": "What's up?"
-    },
-    {
-      "id": 2,
-      "userId": 1,
-      "message": "Greetings"
-    },
-    {
-      "id": 3,
-      "userId": 5,
-      "message": "How's the weather in LA?"
-    },
-    {
-      "id": 4,
-      "userId": 10,
-      "message": "Weather in LA is hot!"
-    },
-    {
-      "id": 5,
-      "userId": 3,
-      "message": "Do you know the muffin man?"
-    },
-    {
-      "id": 6,
-      "userId": 6,
-      "message": "The muffin man?"
-    },
-    {
-      "id": 7,
-      "userId": 3,
-      "message": "Yes! The muffin man"
-    },
-    {
-      "id": 8,
-      "userId": 1,
-      "message": "I need help understand quantum physics"
-    },
-    {
-      "id": 9,
-      "userId": 10,
-      "message": "I'm going to break for lunch"
     }
   ]
 }
