@@ -34,7 +34,7 @@
       "bio": "I'm Cuervo Jones, the leader of a powerful gang in Los Angeles. I'm known for my charisma and ruthlessness. My vision for the city involves radical change, and I'm not afraid to use force to achieve my goals. I spend my time strategizing and expanding my influence.",
       "skillLevel": "Pro",
       "cityState": "Los Angeles, CA",
-      "img": "https://static.wikia.nocookie.net/villains/images/7/72/498417.1.jpg/revision/latest?cb=20141001171946"
+      "img": "https://www.tafce.com/images/thumb/7/76/Cuervo_Jones_-_Edited.png/375px-Cuervo_Jones_-_Edited.png"
     },
     {
       "id": 5,
@@ -74,12 +74,12 @@
     },
     {
       "id": 12,
-      "username": "sarah is an alien",
-      "email": "sarah@gmail.com",
-      "img": "https://img.asmedia.epimg.net/resizer/v2/JEY7K2DTGBCVPKWQ3H2GAZ2QKQ.jpg?auth=f2a6e43e898d44a272c2e05f4a7a34c87d74e1d29ab9593de6eff4fc1671f4e1&width=1472&height=828&smart=true",
+      "username": "Jake",
+      "email": "jake@gmail.com",
+      "img": "https://media-assets.wired.it/photos/639c99a5ec83edc339ad48ba/master/pass/Ash%20ketchum%20anime%20Pok%C3%A9mon%20Wired.png",
       "skillLevel": "Pro",
-      "bio": "I am the handball champion.",
-      "cityState": "Outer, Space"
+      "bio": "I'm Jake, from Pallet Town! I bring the same determination and spirit from my Pokémon journeys onto the handball court. I aim to be the very best, whether it's catching Pokémon or rolling out on my opponent. Let's play and achieve greatness together!",
+      "cityState": "Pallet Town, Kanto"
     }
   ],
   "games": [
@@ -130,6 +130,14 @@
       "location": "Silver Lake Recreation Center, Los Angeles, CA",
       "singlesOrDoublesGame": "Singles",
       "userId": 6
+    },
+    {
+      "date": "6/8/24",
+      "time": "3:33",
+      "location": "Palet Town",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 12,
+      "id": 9
     }
   ],
   "gameBridge": [
@@ -137,16 +145,6 @@
       "userId": 12,
       "gameId": 1,
       "id": 1
-    },
-    {
-      "userId": 12,
-      "gameId": 4,
-      "id": 2
-    },
-    {
-      "userId": 12,
-      "gameId": 5,
-      "id": 3
     }
   ]
 }

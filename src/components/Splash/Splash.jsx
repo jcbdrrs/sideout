@@ -18,7 +18,7 @@ export const SplashPage = () => {
             onClick={() => navigate("/login")}
           />
           <div>
-          <h2 onClick={() => navigate("/login")}>SEE YOU ON THE COURT</h2>
+          <h2 >SEE YOU ON THE COURT</h2>
           </div>
         </div>
       </div>

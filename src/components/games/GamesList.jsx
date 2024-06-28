@@ -21,7 +21,7 @@ export const GamesList = ({ currentUser }) => {
       });
     });
   };
-
+  
 
   useEffect(() => {
     getAllGames().then((gamesArray) => {

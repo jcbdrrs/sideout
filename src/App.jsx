@@ -6,7 +6,8 @@ import { Register } from "./components/auth/Register.jsx";
 import { Authorized } from "./views/Authorized.jsx";
 import { SplashPage } from "./components/Splash/Splash.jsx";
 
-//TODO - wrap ApplicationViews with Authorized
+
+
 function App() {
   return (
     

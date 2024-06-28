@@ -1,3 +1,22 @@
+a:link {
+    color: rgb(255, 0, 0);
+}
+  
+/* visited link */
+a:visited {
+    color: rgb(0, 0, 0);
+}
+  
+/* mouse over link */
+a:hover {
+    color: red;
+}
+  
+/* selected link */
+a:active {
+    color: yellow;
+}
+
 .splash {
     border: 5px solid #ffcc00;
     border-radius: 10px;
@@ -8,6 +27,11 @@
     background-color: #000000;
     margin-top: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.splash:hover {
+    background-color: #333333; /* Change to your desired hover color */
 }
 
 .splash-image-container {
@@ -24,16 +48,35 @@
     height: auto;
     /* Maintains the aspect ratio */
 }
+
+.centered-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+.centered-text {
+    max-width: 100%;
+    /* Ensures the image scales responsively */
+    height: auto;
+    /* Maintains the aspect ratio */
+}
+
+.centered-text:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
 .enter-button {
     background-color: #ffc200; /* Custom button color */
     border-color: #ffc200; /* Custom button border color */
     margin-top: 20px; /* Space between image and button */
-  }
-  
-  .enter-button:hover {
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.enter-button:hover {
     background-color: #e0a800; /* Darker shade for hover effect */
     border-color: #e0a800; /* Darker border for hover effect */
-  }
+}
 
 .button-container {
     text-align: center;

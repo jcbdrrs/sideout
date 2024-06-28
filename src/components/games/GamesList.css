@@ -1,4 +1,4 @@
-/* Centering everything in the component
+Centering everything in the component
 .center-container {
     display: flex;
     flex-direction: column;
@@ -28,4 +28,13 @@
 
 .center-container button {
     margin-top: 20px;
-} */
+}
+
+.button-container {
+    color: #0066ff;
+}
+
+.button-container:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
