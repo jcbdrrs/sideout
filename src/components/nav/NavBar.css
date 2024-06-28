@@ -18,6 +18,8 @@
   margin: auto;
 }
 
+
+
 .logo-img {
   height: 90px; /* Adjust the height as needed */
   width: auto;
@@ -27,6 +29,12 @@
 
 .navbar-logo {
   height: 50px; /* Adjust the height as needed */
+
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
 }
 
 .logout-button {
@@ -40,5 +48,26 @@
 
 .logout-button:hover {
   color: #ffffff;
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
 }
 
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}

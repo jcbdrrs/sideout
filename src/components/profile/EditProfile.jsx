@@ -51,7 +51,21 @@ export const EditProfile = ({ currentUser }) => {
 
                 <img alt="Card" src={myProfile.img} />
                 <CardBody>
-                    {/* <CardTitle tag="h5">{user.username}</CardTitle> */}
+                <fieldset>
+                        <div className="form-title">
+                            <input
+                                text="text"
+                                value={myProfile.img}
+                                className="form-control"
+                                placeholder={"Img"}
+                                onChange={(profile) => {
+                                    const profileCopy = { ...myProfile };
+                                    profileCopy.img = profile.target.value;
+                                    setMyProfile(profileCopy);
+                                }}
+                            ></input>
+                        </div>
+                    </fieldset>
                     <fieldset>
                         <div className="form-title">
                             <input

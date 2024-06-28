@@ -12,14 +12,14 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
   });
   const [gameBridge2, setGameBridge2] = useState({});
 
-const getAndSetGameBridge = () => {
+  const getAndSetGameBridge = () => {
     getGameBridgeById(game.id).then((gamesArray) => {
-        setGameBridge(gamesArray);
-      });
-  
-}
+      setGameBridge(gamesArray);
+    });
 
-const joinGame = (gameId) => {
+  }
+
+  const joinGame = (gameId) => {
     let gameCopy = { ...singleGame }
     gameCopy.gameId = gameId
     gameCopy.userId = currentUser.id
@@ -28,27 +28,27 @@ const joinGame = (gameId) => {
 
 
 
-console.log(game)
+  console.log(game)
 
   useEffect(() => {
     getAndSetGameBridge()
   }, [game]);
 
   useEffect(() => {
-setGameBridge2(gameBridge)
-  },[gameBridge])
+    setGameBridge2(gameBridge)
+  }, [gameBridge])
 
   const handleButtonClick = () => {
     joinGame(game.id).then(() => {
-        getAndSetGameBridge()
+      getAndSetGameBridge()
     })
-    
+
   };
 
   return (
     <section key={game.id}>
       <div className="mt-5"></div>
-      <div className="px-2"> 
+      <div className="px-2">
 
         <Card className="my-2 text-center">
           <CardBody>
@@ -62,7 +62,7 @@ setGameBridge2(gameBridge)
               SINGLES|DOUBLES: {game.singlesOrDoublesGame ? "Singles" : "Doubles"}
             </CardText>
             <CardText>
-              PLAYERS: {game?.user?.username} vs {gameBridge[0]?.user?.username}
+              PLAYERS: {game?.user?.username} (vs) {gameBridge[0]?.user?.username}
             </CardText>
 
             {game.userId == currentUser.id ? (
@@ -72,10 +72,10 @@ setGameBridge2(gameBridge)
             ) : null}
 
             {game.userId !== currentUser.id && game.id !== gameBridge[0]?.gameId ? (
-              <button type="button" className="btn btn-light" onClick={() => handleButtonClick()}>
+              <button type="button" className="btn btn-light" color="primary" onClick={() => handleButtonClick()}>
                 SEE YOU ON THE COURT
               </button>
-            ): ""}
+            ) : ""}
 
             {game.userId == currentUser.id ? (
               <Button onClick={() => handleDeleteCreatedNewGame(game.id)}>

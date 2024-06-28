@@ -74,12 +74,12 @@
     },
     {
       "id": 12,
-      "username": "sarah is an alien",
-      "email": "sarah@gmail.com",
-      "img": "https://img.asmedia.epimg.net/resizer/v2/JEY7K2DTGBCVPKWQ3H2GAZ2QKQ.jpg?auth=f2a6e43e898d44a272c2e05f4a7a34c87d74e1d29ab9593de6eff4fc1671f4e1&width=1472&height=828&smart=true",
+      "username": "Jake",
+      "email": "jake@gmail.com",
+      "img": "https://media-assets.wired.it/photos/639c99a5ec83edc339ad48ba/master/pass/Ash%20ketchum%20anime%20Pok%C3%A9mon%20Wired.png",
       "skillLevel": "Pro",
-      "bio": "I am the handball champion.",
-      "cityState": "Outer, Space"
+      "bio": "I'm Jake, from Pallet Town! I bring the same determination and spirit from my Pokémon journeys onto the handball court. I aim to be the very best, whether it's catching Pokémon or rolling out on my opponent. Let's play and achieve greatness together!",
+      "cityState": "Pallet Town, Kanto"
     }
   ],
   "games": [
@@ -137,16 +137,53 @@
       "userId": 12,
       "gameId": 1,
       "id": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "userId": 10,
+      "message": "What's up?"
     },
     {
-      "userId": 12,
-      "gameId": 4,
-      "id": 2
+      "id": 2,
+      "userId": 1,
+      "message": "Greetings"
     },
     {
-      "userId": 12,
-      "gameId": 5,
-      "id": 3
+      "id": 3,
+      "userId": 5,
+      "message": "How's the weather in LA?"
+    },
+    {
+      "id": 4,
+      "userId": 10,
+      "message": "Weather in LA is hot!"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "message": "Do you know the muffin man?"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "message": "The muffin man?"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "message": "Yes! The muffin man"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "message": "I need help understand quantum physics"
+    },
+    {
+      "id": 9,
+      "userId": 10,
+      "message": "I'm going to break for lunch"
     }
   ]
 }
