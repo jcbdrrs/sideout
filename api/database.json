@@ -247,6 +247,11 @@
       "userId": 7,
       "gameId": 6,
       "id": 27
+    },
+    {
+      "userId": 12,
+      "gameId": 1,
+      "id": 28
     }
   ]
 }
