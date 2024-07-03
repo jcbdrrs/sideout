@@ -23,6 +23,12 @@ export const deleteGame = (gameId) => {
     });
   };
 
+  export const leaveGame = (gameBridgeId) => {
+    return fetch(`http://localhost:8088/gameBridge/${gameBridgeId}`, {
+      method: "DELETE"
+    });
+  };
+
   export const getGameById = (gameId) => {
     return fetch(`http://localhost:8088/games/${gameId}`).then((res) =>
        res.json())
@@ -45,6 +51,12 @@ export const deleteGame = (gameId) => {
   
   };
   
+  export const getGameBridgeByUserId = (Id) => {
+    return fetch(`http://localhost:8088/gameBridge?userId=${Id}&_expand=user`).then((res) =>
+       res.json())
+  
+  };
+
   export const handleAcceptGame = (myGame) => {
     return fetch(`http://localhost:8088/gameBridge/`, {
       method: "POST",

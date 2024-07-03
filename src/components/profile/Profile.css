@@ -1,11 +1,66 @@
-.wrapper-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full height of the viewport */
-  padding-top: 60px; /* Adjust the value as needed */
+/* Profile.css */
+
+
+/* Center the profile card in the middle of the page with buffer space at the top and bottom */
+.profile.wrapper-center {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 65vh; /* Ensure the minimum height considers the navbar and bottom buffer */
+  padding-top: px; /* Add more padding to the top to ensure it's not hidden by the navbar */
+  padding-bottom: px; /* Add more padding at the bottom for spacing */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
-.profile {
-  text-align: center; /* Optional: Center align text within the profile section */
+/* Styling for the card component */
+.card {
+  width: 20rem; /* Reduce the card width */
+  background-color: rgba(255, 255, 255, 0.9); /* Light translucent background */
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 0; /* No rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+/* Styling for the card image */
+.card img {
+  width: 100%;
+  align-items: auto; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Add a separator between image and content */
+}
+
+/* Styling for the card body */
+.card-body {
+  padding: 20px; /* Padding inside the card body */
+}
+
+/* Styling for the card title */
+.card-title {
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 1.5rem; /* Increase font size */
+}
+
+/* Styling for the card text */
+.card-text {
+  margin-bottom: 10px; /* Space below each text element */
+  font-size: 1rem; /* Standard font size */
+}
+
+/* Styling for the list group */
+.list-group-item {
+  padding: 15px 20px; /* Padding inside the list group item */
+  font-size: 1rem; /* Standard font size */
+}
+
+/* Styling for the edit link */
+.list-group-item a {
+  display: inline-block; /* Ensure link takes up its content's width */
+  margin-top: 10px; /* Space above the link */
+  font-size: 1rem; /* Standard font size */
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.list-group-item a:hover {
+  text-decoration: underline; /* Underline the link on hover */
 }
