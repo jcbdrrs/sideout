@@ -78,7 +78,7 @@
       "email": "jake@gmail.com",
       "img": "https://media-assets.wired.it/photos/639c99a5ec83edc339ad48ba/master/pass/Ash%20ketchum%20anime%20Pok%C3%A9mon%20Wired.png",
       "skillLevel": "Pro",
-      "bio": "I'm Jake, from Pallet Town! I bring the same determination and spirit from my Pokémon journeys onto the handball court. I aim to be the very best, whether it's catching Pokémon or rolling out on my opponent. Let's play and achieve greatness together!",
+      "bio": "Let's play and achieve greatness together!",
       "cityState": "Pallet Town, Kanto"
     }
   ],
@@ -132,7 +132,7 @@
       "userId": 6
     },
     {
-      "location": "Palet Town",
+      "location": "Pallet Town Park, Pallet Town, Kanto",
       "id": 9,
       "date": "7/8/24",
       "time": "3:33 PM",
@@ -140,11 +140,11 @@
       "userId": 12
     },
     {
-      "location": "Pallet Town",
+      "location": "Pallet Town Community Center, Pallet Town, Kanto",
       "id": 10,
       "date": "7/7/24",
       "time": "3:00 PM",
-      "singlesOrDoublesGame": "Singles",
+      "singlesOrDoublesGame": "Doubles",
       "userId": 7
     },
     {
@@ -154,83 +154,99 @@
       "time": "5:00 PM",
       "singlesOrDoublesGame": "Doubles",
       "userId": 12
+    },
+    {
+      "id": 12,
+      "date": "7/21/24",
+      "time": "6:00 PM",
+      "location": "Sunset Ridge Handball Court, Griffith Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Doubles",
+      "userId": 1
+    },
+    {
+      "id": 13,
+      "date": "7/22/24",
+      "time": "8:30 AM",
+      "location": "Lakeside Handball Court, Echo Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 7
+    },
+    {
+      "id": 14,
+      "date": "7/23/24",
+      "time": "12:00 PM",
+      "location": "Artisan Handball Court, Barnsdall Art Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Doubles",
+      "userId": 5
+    },
+    {
+      "id": 15,
+      "date": "7/24/24",
+      "time": "3:00 PM",
+      "location": "Olympic Handball Court, Exposition Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 4
+    },
+    {
+      "id": 17,
+      "date": "7/26/24",
+      "time": "5:00 PM",
+      "location": "Canyon Handball Court, Runyon Canyon Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 6
+    },
+    {
+      "id": 19,
+      "date": "7/28/24",
+      "time": "2:30 PM",
+      "location": "Historic Handball Court, Los Angeles State Historic Park, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 3
+    },
+    {
+      "id": 21,
+      "date": "7/30/24",
+      "time": "7:30 AM",
+      "location": "Meadow Handball Court, Silver Lake Meadows, Los Angeles, CA",
+      "singlesOrDoublesGame": "Singles",
+      "userId": 8
     }
   ],
   "gameBridge": [
-    {
-      "userId": 8,
-      "gameId": 1,
-      "id": 1
-    },
-    {
-      "userId": 8,
-      "gameId": 4,
-      "id": 2
-    },
-    {
-      "userId": 12,
-      "gameId": 4,
-      "id": 3
-    },
     {
       "userId": 4,
       "gameId": 4,
       "id": 4
     },
     {
-      "userId": 7,
-      "gameId": 5,
+      "userId": 4,
+      "gameId": 9,
       "id": 5
     },
     {
-      "userId": 12,
-      "gameId": 5,
+      "userId": 8,
+      "gameId": 8,
       "id": 6
     },
     {
-      "userId": 8,
-      "gameId": 5,
-      "id": 7
-    },
-    {
-      "userId": 6,
-      "gameId": 9,
-      "id": 8
-    },
-    {
-      "userId": 7,
-      "gameId": 9,
-      "id": 9
-    },
-    {
-      "userId": 4,
-      "gameId": 9,
-      "id": 10
+      "userId": 12,
+      "gameId": 4,
+      "id": 24
     },
     {
       "userId": 12,
       "gameId": 10,
-      "id": 11
-    },
-    {
-      "userId": 12,
-      "gameId": 7,
-      "id": 12
+      "id": 25
     },
     {
       "userId": 7,
-      "gameId": 7,
-      "id": 13
+      "gameId": 4,
+      "id": 26
     },
     {
-      "userId": 4,
-      "gameId": 7,
-      "id": 14
-    },
-    {
-      "userId": 12,
-      "gameId": 8,
-      "id": 15
+      "userId": 7,
+      "gameId": 6,
+      "id": 27
     }
   ]
 }

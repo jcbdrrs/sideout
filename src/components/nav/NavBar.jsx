@@ -27,17 +27,17 @@ function NavBar() {
         </NavItem>
         <NavItem>
           <NavLink href="http://localhost:5173/create-game">
-            CREATE GAME
+            <strong>CREATE GAME</strong>
           </NavLink>
         </NavItem>
         <div></div>
         <NavItem>
           <Link to={profileLink} className="nav-link">
-            PROFILE
+          <strong>PROFILE</strong>
           </Link>
         </NavItem>
         <NavItem>
-          <button onClick={handleLogout} className="logout-button">LOGOUT</button>
+          <button onClick={handleLogout} className="logout-button"><strong>LOGOUT</strong></button>
         </NavItem>
       </Nav>
     </div>

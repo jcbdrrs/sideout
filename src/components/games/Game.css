@@ -1,0 +1,63 @@
+
+
+body {
+  background-image: url('src/assets/sideoutImg2.jpg'); /* URL or path to your background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-attachment: fixed; /* Make sure the background stays fixed when scrolling */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center center; /* Center the image */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+  width: 100%; /* Ensure the body takes the full width of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Center the game section with buffer space */
+.card-wrapped-center {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 100px; /* Add buffer space from the top */
+    padding-bottom: 100px; /* Add buffer space from the bottom */
+    padding-left: 20px; /* Add left buffer */
+    padding-right: 20px; /* Add right buffer */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Centering the card content and ensuring appropriate buffer */
+.card {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 800px; /* Limit the max width */
+    background-color: rgba(255, 255, 255, 0.9); /* Light translucent background */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 0; /* No rounded corners */
+    margin: 20px; /* Space around the card */
+    padding: 20px; /* Padding inside the card */
+    overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+/* Styling for the card body */
+.card-body {
+    padding: 20px; /* Padding inside the card body */
+    text-align: center; /* Center the text inside the card */
+}
+
+/* Styling for the card title */
+.card-title {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 1.5rem; /* Increase font size */
+}
+
+/* Styling for the card text */
+.card-text {
+    margin-bottom: 10px; /* Space below each text element */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Styling for the buttons */
+.btn-light {
+    margin: 10px 0; /* Space around the buttons */
+}

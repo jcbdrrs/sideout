@@ -3,10 +3,11 @@ import "./Profile.css";
 import { getUserById } from "../../services/UserServices.jsx";
 import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { Link, useNavigate, useParams } from "react-router-dom";
+import "./Profile.css"
 
 export const Profile = ({ currentUser }) => {
   const [user, setUser] = useState({});
-const {profileId} = useParams()
+  const { profileId } = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -15,7 +16,7 @@ const {profileId} = useParams()
       setUser(userObjData);
       console.log(userObjData);
     });
-  }, []);
+  }, [profileId]);
 
   if (!user) {
     return <div>Loading...</div>;
@@ -46,9 +47,11 @@ const {profileId} = useParams()
             {user.skillLevel}
             <div>
             </div>
-            <Link to={`/edit-profile/${currentUser.id}`}>
-              Edit
-            </Link>
+            {parseInt(profileId) === currentUser.id ? (
+              <Link to={`/edit-profile/${currentUser.id}`}>
+                Edit Profile
+              </Link>
+            ) : ""}
           </ListGroupItem>
         </ListGroup>
 
