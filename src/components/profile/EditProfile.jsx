@@ -19,14 +19,7 @@ export const EditProfile = ({ currentUser }) => {
         });
     }, [profileId]);
 
-    // "username": "jake testing stuff",
-    // "email": "testing@gmail.com",
-    // "img": "https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/aon9tdqs2etsfma0tv8g.jpg",
-    // "skillLevel": "Pro",
-    // "bio": "Name’s Spike Spiegel. I used to be a bounty hunter cruising the galaxy, but now I’ve traded my guns for handball. The court's my new frontier, and I bring the same quick reflexes and sharp eye to the game.",
-    // "cityState": "Outer, Space",
-    // "created_at": "2024-06-27T14:24:29.337Z",
-    // "id": 10
+
 
     const handleSave = (profile) => {
         profile.preventDefault();
@@ -40,7 +33,7 @@ export const EditProfile = ({ currentUser }) => {
             cityState: myProfile.cityState
         };
         updateProfile(editedProfile).then(() => {
-            navigate("/profile");
+            navigate(`/profile/${profileId}`);
         });
     };
 

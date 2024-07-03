@@ -8,22 +8,22 @@ import "./Game.css"
 export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
   // State to store the list of players in the game
   const [gameBridge, setGameBridge] = useState([]);
-  
+
   // State to store the current game details for the current user
   const [singleGame, setSingleGame] = useState({
     userId: currentUser.id,
     gameId: 0
   });
-  
+
   // State to store the list of games the current user is part of
   const [userGameBridge, setUserGameBridge] = useState([]);
-  
+
   // State to store the specific game the user wants to leave
   const [userGameBridgeToDelete, setUserGameBridgeToDelete] = useState({});
-  
+
   // State to trigger re-renders when a game is updated
   const [isGameUpdated, setIsGameUpdated] = useState(false);
-  
+
   // Hook to navigate to different routes
   const navigate = useNavigate();
 
@@ -75,7 +75,7 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
   };
 
   return (
-    
+
     <section className="card-wrapped-center" key={game.id}>
       <div className="mt-5"></div>
       <div className="gamecard">
@@ -92,7 +92,7 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
               <div>{game.singlesOrDoublesGame}</div>
             </CardText>
             <CardText>
-              <div><strong>PLAYERS:</strong></div> 
+              <div><strong>PLAYERS:</strong></div>
               <Link to={`/profile/${game?.user?.id}`}> {game?.user?.username}  </Link>
               {gameBridge.map((bridge, index) => (
                 <div key={index}>
@@ -109,21 +109,23 @@ export const Game = ({ game, currentUser, handleDeleteCreatedNewGame }) => {
             ) : null}
 
             {/* Show Join Singles Game button if the game is singles and the current user is not already in the game */}
-            {game.userId !== currentUser.id && game.singlesOrDoublesGame.toLowerCase() === "singles" && !gameBridge.some(gb => gb.userId === currentUser.id) ? (
+            {game.userId !== currentUser.id && game.singlesOrDoublesGame.toLowerCase() === "singles" && game.id !== gameBridge[0]?.gameId ? (
               <button type="button" className="btn btn-light" color="primary" onClick={handleButtonClick}>
                 JOIN SINGLES GAME
               </button>
             ) : ""}
 
             {/* Show Join Doubles Game button if the game is doubles, has less than 4 players, and the current user is not already in the game */}
-            {game.userId !== currentUser.id && game.singlesOrDoublesGame.toLowerCase() === "doubles" && gameBridge.length < 4 && !gameBridge.some(gb => gb.userId === currentUser.id) ? (
+            {game.userId !== currentUser.id && currentUser.id !== gameBridge[gameBridge.length - 1]?.userId && game.singlesOrDoublesGame.toLowerCase() === "doubles" && gameBridge.length < 3 ? (
               <button type="button" className="btn btn-light" color="primary" onClick={handleButtonClick}>
                 JOIN DOUBLES GAME
               </button>
             ) : ""}
 
+
+
             {/* Show Leave Game button if the current user is already in the game */}
-            {game.userId !== currentUser.id && gameBridge.some(gb => gb.userId === currentUser.id) ? (
+            {game.userId !== currentUser.id && currentUser.id === gameBridge[0]?.userId || currentUser.id === gameBridge[1]?.userId || currentUser.id === gameBridge[2]?.userId ? (
               <button type="button" className="btn btn-light" color="primary" onClick={handleLeaveGameButtonClick}>
                 LEAVE GAME
               </button>

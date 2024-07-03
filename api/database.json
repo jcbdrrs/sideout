@@ -58,19 +58,19 @@
       "id": 7,
       "username": "Pipeline",
       "email": "pipeline@gmail.com",
-      "bio": "I'm Pipeline, a daredevil and extreme sports enthusiast. I thrive on adrenaline and am known for my fearless stunts. Navigating the urban landscape is my specialty, and I love pushing the limits. When I'm not performing daring feats, you'll find me exploring other extreme sports and staying active.",
+      "img": "https://vhistory.wordpress.com/wp-content/uploads/2020/10/peter-fonda.jpg",
       "skillLevel": "Pro",
-      "cityState": "Los Angeles, CA",
-      "img": "https://vhistory.wordpress.com/wp-content/uploads/2020/10/peter-fonda.jpg"
+      "bio": "I'm Pipeline, a daredevil and extreme sports enthusiast. I thrive on adrenaline and am known for my fearless stunts. Navigating the urban landscape is my specialty, and I love pushing the limits. When I'm not performing daring feats, you'll find me exploring other extreme sports and staying active.",
+      "cityState": "Los Angeles, CA"
     },
     {
       "id": 8,
       "username": "Eddie",
       "email": "eddie@gmail.com",
-      "bio": "I'm Eddie, a smooth-talker with a knack for getting what I want. I use my charm and quick wit to navigate tricky situations and come out on top. Survival in this chaotic city is my game, and I'm always looking for the next big score. In my spare time, I enjoy gambling and living life on the edge.",
+      "img": "https://www.tafce.com/images/thumb/4/49/Map_to_the_Stars_Eddie_-_Edited.png/450px-Map_to_the_Stars_Eddie_-_Edited.png",
       "skillLevel": "Intermediate",
-      "cityState": "Los Angeles, CA",
-      "img": "https://www.tafce.com/images/thumb/4/49/Map_to_the_Stars_Eddie_-_Edited.png/450px-Map_to_the_Stars_Eddie_-_Edited.png"
+      "bio": "I'm Eddie, a smooth-talker with a knack for getting what I want. I use my charm and quick wit to navigate tricky situations and come out on top. Survival in this chaotic city is my game, and I'm always looking for the next big score. In my spare time, I enjoy gambling and living life on the edge.",
+      "cityState": "Los Angeles, CA"
     },
     {
       "id": 12,
@@ -80,6 +80,15 @@
       "skillLevel": "Pro",
       "bio": "Let's play and achieve greatness together!",
       "cityState": "Pallet Town, Kanto"
+    },
+    {
+      "id": 13,
+      "username": "jaketest",
+      "email": "jaketest@gmail.com",
+      "img": "https://img.asmedia.epimg.net/resizer/v2/JEY7K2DTGBCVPKWQ3H2GAZ2QKQ.jpg?auth=f2a6e43e898d44a272c2e05f4a7a34c87d74e1d29ab9593de6eff4fc1671f4e1&width=1472&height=828&smart=true",
+      "skillLevel": "Beginner",
+      "bio": "Let's play some handball",
+      "cityState": "Hico, WV"
     }
   ],
   "games": [
@@ -143,7 +152,7 @@
       "location": "Pallet Town Community Center, Pallet Town, Kanto",
       "id": 10,
       "date": "7/7/24",
-      "time": "3:00 PM",
+      "time": "4:00 PM",
       "singlesOrDoublesGame": "Doubles",
       "userId": 7
     },
@@ -240,18 +249,18 @@
     },
     {
       "userId": 7,
-      "gameId": 4,
-      "id": 26
-    },
-    {
-      "userId": 7,
       "gameId": 6,
-      "id": 27
+      "id": 29
     },
     {
       "userId": 12,
       "gameId": 1,
-      "id": 28
+      "id": 30
+    },
+    {
+      "userId": 13,
+      "gameId": 4,
+      "id": 31
     }
   ]
 }
